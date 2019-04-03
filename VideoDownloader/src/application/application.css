@@ -1,0 +1,50 @@
+#test {
+	
+	/*Put color in background*/
+	-fx-background-color: rgb(255.0, 255.0, 255.0);
+	
+}
+
+#positiveResponse {
+	
+	-fx-font-size: 14.0px;
+	-fx-text-fill: rgb(18.0, 228.0, 18.0);
+	
+}
+
+#negativeResponse {
+	
+	-fx-text-fill: rgb(228.0, 18.0, 18.0);
+	
+}
+
+#dl {
+	
+	/*Taille de la box */
+	-fx-padding:  6.0, 6.0, 6.0, 6.0;
+	/*Tailles des bordures */
+	-fx-border-radius: 8.0;
+	/* Style */
+	-fx-font-weight: bold;
+	
+}
+
+.errorTextField {
+    -fx-background-color: #ffbbbb;
+    -fx-border-color: #f00;
+}
+
+.correctTextField {
+    -fx-background-color: #ffbbbb;
+    -fx-border-color: #21DD21;
+}
+
+.text-field {
+    -fx-background-color: #a9a9a9 , white , white;
+    -fx-background-insets: 0.0 -1.0 -1.0 -1.0, 0.0 0.0 0.0 0.0, 0.0 -1.0 3.0 -1.0;
+}
+
+.text-field:focused {
+    -fx-background-color: #a9a9a9 , white , white;
+    -fx-background-insets: 0.0 -1.0 -1.0 -1.0, 0.0 0.0 0.0 0.0, 0.0 -1.0 3.0 -1.0;
+}

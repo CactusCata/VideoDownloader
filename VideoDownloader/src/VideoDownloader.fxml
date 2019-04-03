@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane cache="true" prefHeight="298.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DateController">
+   <children>
+      <Button layoutX="169.0" layoutY="259.0" mnemonicParsing="false" onAction="#download" text="Download" />
+      <CheckBox fx:id="playlist" layoutX="310.0" layoutY="95.0" mnemonicParsing="false" text="Is playlist" />
+      <Label layoutX="98.0" layoutY="14.0" text="Video Downloader" underline="true">
+         <font>
+            <Font name="LetterOMatic!" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="70.0" text="Tap your url:" />
+      <Label layoutX="23.0" layoutY="125.0" text="Youtube-dl.exe folder:" />
+      <Label layoutX="22.0" layoutY="184.0" text="Destination folder:" />
+      <RadioButton fx:id="mp3" layoutX="322.0" layoutY="200.0" mnemonicParsing="false" text="Mp3" toggleGroup="$format">
+         <toggleGroup>
+            <ToggleGroup fx:id="format" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="mp4" layoutX="322.0" layoutY="170.0" mnemonicParsing="false" selected="true" text="Mp4" toggleGroup="$format" />
+      <TextField fx:id="urlField" layoutX="22.0" layoutY="90.0" onKeyTyped="#writeUrl" prefHeight="26.0" prefWidth="262.0" promptText="url..." />
+      <TextField fx:id="youtubedlexeField" layoutX="22.0" layoutY="146.0" onKeyTyped="#writeYTDLExe" prefHeight="26.0" prefWidth="222.0" promptText="Youtube-dl.exe folder..." />
+      <TextField fx:id="destinationFolderField" layoutX="19.0" layoutY="208.0" onKeyTyped="#writeDestinationFolder" prefHeight="26.0" prefWidth="222.0" promptText="Destination folder..." />
+      <Button layoutX="258.0" layoutY="144.0" mnemonicParsing="false" onAction="#chooseFile" text="..." />
+      <Button layoutX="258.0" layoutY="209.0" mnemonicParsing="false" onAction="#chooseFolder" text="..." />
+      <Label layoutX="325.0" layoutY="286.0" text="Developped by CactusCata">
+         <font>
+            <Font size="7.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
